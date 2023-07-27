@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="black">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="BlazeInferno64">
+    <title>Blaze Chat App | Realtime Free Chat App made using Nodejs & Socket.io</title>
+    <link rel="stylesheet" href="./public/css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/96913755?v=4" type="image/x-icon"/>
+    <script src="https://kit.fontawesome.com/f3220d5256.js" crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2604597246009301"
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="app">
+        <div class="screen join-screen active">
+            <div class="form">
+                <h2>Join The Conversation</h2>
+                <div class="form-input">
+                    <label for="username">
+                        Username
+                    </label>
+                    <input type="text" id="username" class="username" placeholder="Enter username">
+                </div>
+                <div class="form-input">
+                    <button id="join-user">
+                      <i class="fa fa-send"></i>  Join
+                    </button>
+                    <button class="refresh" onclick="window.location.reload(true)"><i class="fa fa-redo"></i> Refresh</button>
+                </div>
+            </div>
+        </div>
+        <div class="screen chat-screen">
+            <div class="header">
+                <div class="logo">Blaze Chat App</div>
+                <button id="exit-chat">Leave</button>
+            </div>
+            <div class="messages">
+                <!--Dummy Messages-->
+                <!--<div class="message my-message">
+                    <div>
+                        <div class="name">You</div>
+                        <div class="text">Hi</div>
+                    </div>
+                </div>
+                <div class="update">
+                    Abc just joined the chat
+                </div>
+                <div class="message other-message">
+                    <div>
+                        <div class="name">Abc</div>
+                        <div class="text">Yo</div>
+                    </div>
+                </div>-->
+            </div>
+            <div class="typebox">
+                <input type="text" class="type" id="message-input" placeholder="Type your message here..." />
+                <button id="send-message"><i class="fa fa-send"></i></button>
+            </div>
+        </div>
+    </div>
+    <script src="./public/js/script.js"></script>
+    <script defer src="js/script.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+</body>
+</html>
