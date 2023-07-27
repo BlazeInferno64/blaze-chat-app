@@ -1,14 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Quicksand', sans-serif;
     height: 100vh;
     display: flex;
     justify-content: center;
     background: rgb(30,30,30);
+}
+html{
+    scroll-behavior: smooth;
 }
 .app{
     position: fixed;
@@ -18,6 +23,7 @@ body{
     background: #2a2d2e;
     color: #fff;
     box-shadow: 0 5px 20px 0 rgba(0,0,0,.6);
+    scroll-behavior: smooth;
 }
 .app > .screen{
     display: none;
@@ -115,6 +121,19 @@ body{
     background: #2a2d2e;
     color: #fff;
     overflow: auto;
+}
+.chat-screen .messages::-webkit-scrollbar{
+    background: transparent;
+    width: 10px;
+    border-radius: .5rem;
+}
+.chat-screen .messages::-webkit-scrollbar-track{
+    background: transparent;
+    border-radius: .5rem;
+}
+.chat-screen .messages::-webkit-scrollbar-thumb{
+    background: #585858;
+    border-radius: .5rem;
 }
 .chat-screen .messages .message{
     display: flex;
@@ -220,4 +239,4 @@ body{
 }
 #exit-chat:active{
     scale: .95;
-}
+    
