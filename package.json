@@ -1,7 +1,7 @@
 {
   "dependencies": {
-    "express": "^4.19.2",
-    "socket.io": "^4.7.1"
+    "express": "^4.22.1",
+    "socket.io": "^4.8.3"
   },
   "devDependencies": {
     "nodemon": "^3.0.1"
